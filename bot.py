@@ -9,6 +9,9 @@ if len(argv) == 2:
     elif argv[1] == 'local':
         import interfaces.local
         interfaces.local.client.run()
+    elif argv[1] == 'discord':
+        import interfaces.discord
+        interfaces.discord.client.run()
     else:
         print('Unrecognized option: %s' % argv[1])
         print('Recognized options: local, --help')

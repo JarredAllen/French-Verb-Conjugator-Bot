@@ -6,7 +6,7 @@ from prompt import get_prompt
 
 
 class LocalClient:
-    def run():
+    def run(self):
         while True:
             next_verb = random.choice(verbs)
             tense = random.choice(tenses)
