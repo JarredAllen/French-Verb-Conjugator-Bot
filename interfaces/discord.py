@@ -30,6 +30,7 @@ async def on_message(message):
         else:
             play = False
             discord_client.send_message(message.channel, 'Unrecognized play args: [%s]' % ' '.join(cmd))
+        race = bool(cmd.count('race'))
 
         while play or not rounds:
             next_verb = random.choice(verbs)
@@ -39,14 +40,19 @@ async def on_message(message):
             prompt = get_prompt(next_verb.infinitif, tense, person, number)
             await discord_client.send_message(message.channel, prompt)
             correct = conjugate_verb(next_verb, tense, person, number, gender=prompt.lower().count('elle'))
-            response = await discord_client.wait_for_message(channel=message.channel, author=message.author)
+            response = None
+            while not response or response.author.id == '413934191055601664':
+                if race:
+                    response = await discord_client.wait_for_message(channel=message.channel)
+                else:
+                    response = await discord_client.wait_for_message(channel=message.channel, author=message.author)
             rounds += 1
             if correct == response.content.strip():
                 wins += 1
-                await discord_client.send_message(message.channel, 'Correct, %s!' % (message.author.name))
+                await discord_client.send_message(message.channel, 'Correct, %s!' % (response.author.name))
             else:
                 await discord_client.send_message(message.channel, 'Sorry, %s, but that isn\'t right.\n'
-                                                  'The answer is %s.' % (message.author.name, correct))
+                                                  'The answer is %s.' % (response.author.name, correct))
                 if death:
                     await discord_client.send_message(message.channel, 'Your final streak is %d!' % wins)
                     break
