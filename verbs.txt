@@ -35,5 +35,10 @@ aller
 
 dormir
 .ir
-s,s,t,.ons,.ez,.ent;i;.ais,.ais,.ait,.ions,.iez,.aient;.is,.is,.it,.îmes,.îtes,.irent;.irai,.iras,.ira,.irons,.irez,.iront;.irais,.irais,.irait,.irions,.iriez,.iraient;.e,.es,.e,.ions,.iez,.ent
+s,s,t,.ons,.ez,.ent;.i;.ais,.ais,.ait,.ions,.iez,.aient;.is,.is,.it,.îmes,.îtes,.irent;.irai,.iras,.ira,.irons,.irez,.iront;.irais,.irais,.irait,.irions,.iriez,.iraient;.e,.es,.e,.ions,.iez,.ent
 dormir,partir,servir,mentir,sortir
+
+vouloir
+ouloir
+eux,eux,eut,oulons,oulez,eulent;voulu;oulais,oulais,oulait,oulions,ouliez,oulaient;oulus,oulus,oulut,ûmes,ûtes,urent;oudrai,oudras,oudra,oudrons,oudrez,oudront;oudrais,oudrais,oudrait,oudrions,oudriez,oudraient;euille,euilles,euille,euillions,euilliez,euillent
+vouloir

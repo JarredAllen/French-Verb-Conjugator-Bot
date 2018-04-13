@@ -70,7 +70,9 @@ def conjugate_verb(verb, tense, person, number, verb_type=None, gender=0):
     return stem + ending
 
 
-etre_passé_verbs = ['descendre', 'venir', 'devenir', 'revenir', 'aller']
+etre_passé_verbs = ['devenir', 'revenir', 'montrer', 'rentrer', 'sortir',
+                    'venir', 'aller', 'naître', 'descendre', 'entrer', 'rester',
+                    'tomber', 'retourner', 'arriver', 'mourir', 'partir']
 
 with open('verbs.txt', encoding='utf-8') as f:
     for verb_file in group_iterable(5, f):
