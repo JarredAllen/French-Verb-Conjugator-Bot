@@ -25,7 +25,7 @@ venir,prevenir,devenir,revenir,tenir,obtenir
 
 être
 être
-suis,es,est,sommes,êtes,sont;été;étais,étais,était,étions,étiez,étaient;fus,fus,fut,fûmes,fûtes,furent;serai,seras,sera,serons,serez,seront;serais,serais,serait,serions,seriez,seriaent;sois,sois,soit,soyons,soyez,soient
+suis,es,est,sommes,êtes,sont;été;étais,étais,était,étions,étiez,étaient;fus,fus,fut,fûmes,fûtes,furent;serai,seras,sera,serons,serez,seront;serais,serais,serait,serions,seriez,seraient;sois,sois,soit,soyons,soyez,soient
 être
 
 aller
